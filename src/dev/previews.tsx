@@ -6,6 +6,7 @@ import ColorModeSwitch from "../components/ColorModeSwitch";
 import Navbar from "../components/Navbar";
 import GameGrid from "../components/GameGrid";
 import GameCard from "../components/GameCard";
+import PlatformIconList from "../components/PlatformIconList";
 
 const ComponentPreviews = () => {
     return (
@@ -23,7 +24,10 @@ const ComponentPreviews = () => {
                 <GameGrid/>
             </ComponentPreview>
             <ComponentPreview path="/GameCard">
-                <GameCard/>
+                <GameCard />
+            </ComponentPreview>
+            <ComponentPreview path="/PlatformIconList">
+                <PlatformIconList/>
             </ComponentPreview>
         </Previews>
     );
