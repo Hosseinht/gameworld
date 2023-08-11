@@ -4,6 +4,8 @@ import {PaletteTree} from "./palette";
 import App from "../App";
 import ColorModeSwitch from "../components/ColorModeSwitch";
 import Navbar from "../components/Navbar";
+import GameGrid from "../components/GameGrid";
+import GameCard from "../components/GameCard";
 
 const ComponentPreviews = () => {
     return (
@@ -16,6 +18,12 @@ const ComponentPreviews = () => {
             </ComponentPreview>
             <ComponentPreview path="/Navbar">
                 <Navbar/>
+            </ComponentPreview>
+            <ComponentPreview path="/GameGrid">
+                <GameGrid/>
+            </ComponentPreview>
+            <ComponentPreview path="/GameCard">
+                <GameCard/>
             </ComponentPreview>
         </Previews>
     );
