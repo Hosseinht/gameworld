@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import apiClient from "../services/api-client";
 import { CanceledError } from "axios";
-import { Simulate } from "react-dom/test-utils";
-import emptied = Simulate.emptied;
 
 interface FetchResponse<T> {
   count: number;
