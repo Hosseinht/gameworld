@@ -13,6 +13,7 @@ interface Props {
 }
 
 const PlatformIconList = ({platforms}: Props) => {
+    // map slug to icon
     const iconMap: { [key: string]: IconType } = {
         pc: FaWindows,
         playstation: FaPlaystation,

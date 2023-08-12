@@ -7,6 +7,8 @@ import Navbar from "../components/Navbar";
 import GameGrid from "../components/GameGrid";
 import GameCard from "../components/GameCard";
 import PlatformIconList from "../components/PlatformIconList";
+import CriticScore from "../components/CriticScore";
+import useGames from "../hooks/useGames";
 
 const ComponentPreviews = () => {
     return (
@@ -28,6 +30,9 @@ const ComponentPreviews = () => {
             </ComponentPreview>
             <ComponentPreview path="/PlatformIconList">
                 <PlatformIconList/>
+            </ComponentPreview>
+            <ComponentPreview path="/CriticScore">
+                <CriticScore}/>
             </ComponentPreview>
         </Previews>
     );
