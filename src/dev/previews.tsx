@@ -9,6 +9,7 @@ import GameCard from "../components/GameCard";
 import PlatformIconList from "../components/PlatformIconList";
 import CriticScore from "../components/CriticScore";
 import useGames from "../hooks/useGames";
+import GenreList from "../components/GenreList";
 
 const ComponentPreviews = () => {
     return (
@@ -33,6 +34,9 @@ const ComponentPreviews = () => {
             </ComponentPreview>
             <ComponentPreview path="/CriticScore">
                 <CriticScore}/>
+            </ComponentPreview>
+            <ComponentPreview path="/GenreList">
+                <GenreList/>
             </ComponentPreview>
         </Previews>
     );
