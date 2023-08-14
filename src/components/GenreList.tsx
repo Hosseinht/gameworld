@@ -1,4 +1,4 @@
-import { Genre } from "../hooks/useGenre";
+import { Genre } from "../hooks/useGenres";
 import useData from "../hooks/useData";
 import {
   Button,
@@ -12,8 +12,10 @@ import getCroppedImageUrl from "../services/image-url";
 
 interface Props {
   onSelectGenre: (genre: Genre) => void;
+  selectedGenre: Genre | null;
 }
-const GenreList = ({ onSelectGenre }: Props) => {
+
+const GenreList = ({ onSelectGenre, selectedGenre }: Props) => {
   const { data, error, isLoading } = useData<Genre>("/genres");
 
   if (error) return null;
@@ -30,6 +32,7 @@ const GenreList = ({ onSelectGenre }: Props) => {
               borderRadius={8}
             />
             <Button
+              fontWeight={genre.id === selectedGenre?.id ? "bold" : "normal"}
               fontSize="lg"
               paddingY="5px"
               variant="link"
