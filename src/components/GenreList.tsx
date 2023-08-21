@@ -1,4 +1,4 @@
-import { Genre } from "../hooks/useGenres";
+import useGenres, { Genre } from "../hooks/useGenres";
 import useData from "../hooks/useData";
 import {
   Button,
@@ -17,10 +17,10 @@ interface Props {
 }
 
 const GenreList = ({ onSelectGenre, selectedGenre }: Props) => {
-  const { data, error, isLoading } = useData<Genre>("/genres");
+  const { data, error, isLoading } = useGenres();
 
-  // if (error) return null;
-  // if (isLoading) return <Spinner />;
+  if (error) return null;
+  if (isLoading) return <Spinner />;
 
   return (
     <>
@@ -28,7 +28,7 @@ const GenreList = ({ onSelectGenre, selectedGenre }: Props) => {
         Genres
       </Heading>
       <List>
-        {data.map((genre) => (
+        {data?.results.map((genre) => (
           <ListItem key={genre.id} paddingY="5px">
             <HStack>
               <Image
