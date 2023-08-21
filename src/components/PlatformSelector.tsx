@@ -1,4 +1,3 @@
-import useData from "../hooks/useData";
 import usePlatforms, { Platform } from "../hooks/usePlatforms";
 import {
   Select,

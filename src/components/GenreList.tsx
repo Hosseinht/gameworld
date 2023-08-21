@@ -1,5 +1,5 @@
 import useGenres, { Genre } from "../hooks/useGenres";
-import useData from "../hooks/useData";
+
 import {
   Button,
   Heading,

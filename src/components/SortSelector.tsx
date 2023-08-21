@@ -1,5 +1,3 @@
-import useGames from "../hooks/useGames";
-import useData from "../hooks/useData";
 import { Button, Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/react";
 import { BsChevronBarDown } from "react-icons/bs";
 
