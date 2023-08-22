@@ -1,6 +1,5 @@
 import usePlatforms, { Platform } from "../hooks/usePlatforms";
 import {
-  Select,
   Menu,
   MenuButton,
   Button,
